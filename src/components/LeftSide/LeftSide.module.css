@@ -1,0 +1,22 @@
+.copy {
+  margin-top: 100px;
+}
+
+.copy > ul > li {
+  position: relative;
+}
+
+.copy > ul > li::after {
+  content: "";
+  position: absolute;
+  right: -7.5px;
+  top: 48%;
+  background-color: #6b7280;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+}
+
+.copy > ul > li:last-child::after {
+  display: none;
+}

@@ -1,0 +1,30 @@
+.menu > ul > li > a {
+  position: relative;
+  display: block;
+}
+
+.menu > ul > li > a > span {
+  color: #6b7280;
+  transition: color 0.4s ease-in-out;
+}
+
+.menu > ul > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  height: 2px;
+  background-color: #60a5fa;
+  width: 0;
+  transition: width 0.4s ease-in-out;
+}
+
+.menu > ul > li.active > a::after,
+.menu > ul > li > a:hover::after {
+  width: 100%;
+}
+
+.menu > ul > li.active > a > span,
+.menu > ul > li > a:hover > span {
+  color: #60a5fa;
+}
